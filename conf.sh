@@ -2,8 +2,8 @@
 
 # Configured from https://wiki.osdev.org/GCC_Cross-Compiler#Installing_Dependencies
 
-function INSTALL_PKG {
-    yay -Syu $1
+function INSTALL_PKGS {
+    yay -Syu $@
 }
 
 export DEPENDENCIES="base-devel gmp libmpc mpfr"

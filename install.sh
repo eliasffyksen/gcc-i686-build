@@ -6,10 +6,7 @@ set -e
 BUILD_ROOT=`pwd`
 
 # Install dependencies
-for DEP in $DEPENDENCIES
-do
-    INSTALL_PKG $DEP
-done
+INSTALL_PKGS $DEPENDENCIES
 echo Done installing dependencies, moving on in 3 sec
 sleep 3
 
